@@ -177,6 +177,9 @@ section.features ul li {
   width: 30%;
   gap: 15px;
 }
+section.features ul li img {
+  min-width: 8px;
+}
 /* color de texto titulo prestaciones */
 section.features ul li h4 {
   color: white;
