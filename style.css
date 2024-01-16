@@ -1,0 +1,363 @@
+:root {
+  --mainColor: rgba(43, 43, 43, 1);
+  --secondaryColor: rgba(191, 175, 242, 1);
+  --getStartedColor: rgba(248, 213, 126, 1);
+  --contrastColor: rgba(51, 51, 51, 1);
+  --productsBackGround: rgba(253, 245, 223, 1);
+  --subtitleColor: rgba(255, 255, 255, 0.421);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+a {
+  color: white;
+}
+/* barra de navegación */
+.navbar {
+  height: 10svh;
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+/* los links del .navbar */
+nav.navbar > a {
+  font-weight: bolder;
+  margin-left: 5%;
+}
+/* Sign up fuente normal */
+nav.navbar div.cta a:first-child {
+  font-weight: normal;
+}
+/* Es un link hecho botón */
+.cta a:last-child {
+  line-height: 40px;
+  text-align: center;
+  height: 40px;
+  width: 150px;
+  background-color: var(--secondaryColor);
+  border-radius: 10px;
+  align-self: center;
+  color: black;
+}
+/* Estilos comunes para CTA  */
+div.cta {
+  width: 300px;
+  height: 8vh;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* en los siguientes, apliqué el mismo estilo a diferentes etiquetas */
+.hero,
+.questions {
+  display: flex;
+  background-color: var(--mainColor);
+  color: white;
+  justify-content: space-around;
+  padding: 40px 80px 20px 80px;
+  flex-shrink: 1;
+}
+/* Titulos del hero y de preguntas todos con CTA  */
+.hero h1,
+.questions h2 {
+  font-size: 3em;
+}
+/* Color de subtitulo */
+.hero p,
+.questions p {
+  color: var(--subtitleColor);
+}
+
+/* Estilo de botones, el primero es link el segundo un botón */
+.cta_started,
+.questions button {
+  background-color: var(--getStartedColor);
+  width: 150px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+/* Utilicé la misma clase para aplicar estilos iguales*/
+.heroText {
+  /*contenedor de titulo, subtitulo y CTA */
+  /* border: 2px solid coral; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-shrink: 1;
+}
+/* Estilo imagenes hero y questions  */
+.hero-img {
+  flex-shrink: 1;
+  background-color: var(--contrastColor);
+  border-radius: 10px;
+  margin-left: 5%;
+  /* border: 2px solid orange; */
+  width: 70%;
+  height: 88%;
+  margin-right: 1%;
+}
+/* estilo empresas que usan nuestos servicios */
+section.logos {
+  background-color: rgba(43, 43, 43, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+/* estilo imagen  grande */
+section.logos img.logoB {
+  border: 2px solid var(--contrastColor);
+  border-width: 2px 0px 2px 0px;
+  padding: 5%;
+  margin: 80px;
+  width: 70%;
+}
+/* imagen para moviles, pequeña */
+section.logos img.logoS {
+  display: none;
+}
+/* estilo productos */
+section.products {
+  display: flex;
+  justify-content: center;
+  background-color: var(--mainColor);
+}
+/* estilo imagen de productos */
+section.products img {
+  padding: 1% 1% 0% 1%;
+  margin: 7%;
+  background-color: var(--productsBackGround);
+  border-radius: 10px;
+}
+
+section.features {
+  background-color: var(--mainColor);
+}
+/* Lista de prestaciones */
+section.features ul {
+  /* border: 2px solid coral; */
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  /* height: 40svh; */
+  padding: 5%;
+  gap: 10px;
+}
+/* Elementos en la lista de prestaciiones */
+section.features ul li {
+  /* border: 2px solid coral; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+  gap: 15px;
+}
+/* color de texto titulo prestaciones */
+section.features ul li h4 {
+  color: white;
+}
+section.features ul li p {
+  /* border: 2px solid coral; */
+  color: var(--subtitleColor);
+  width: 65%;
+  line-height: 1.5;
+  text-align: center;
+}
+article.testimony {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mainColor);
+  padding: 20px 30px 20px 30px;
+}
+article.testimony > div {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondaryColor);
+  flex-direction: column;
+  align-items: start;
+  height: 80%;
+  border-radius: 20px;
+  gap: 30px;
+  padding: 30px 100px;
+  margin: 0px 60px 0px 60px;
+}
+article.testimony div p.feedback {
+  width: 100%;
+  text-align: left;
+  font-size: 24px;
+}
+
+article.testimony div ul.stars {
+  display: flex;
+  list-style: none;
+}
+div.user {
+  display: flex;
+  align-items: center;
+}
+article.testimony div.user > div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-direction: column;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--mainColor);
+  padding: 40px;
+  border: 2px solid var(--contrastColor);
+  border-width: 2px 0px 0px 0px;
+  align-items: stretch;
+}
+
+footer h4 {
+  display: flex;
+  align-self: baseline;
+  color: white;
+  position: relative;
+  bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 50%;
+  right: 8%;
+  padding-top: 6.5%;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  color: white;
+  gap: 10px;
+}
+footer form input {
+  background-color: var(--contrastColor);
+  width: 180px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding-left: 20px;
+}
+footer div {
+  display: flex;
+  align-items: baseline;
+  padding-top: 5%;
+}
+footer div button {
+  background-color: var(--secondaryColor);
+  width: 150px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  align-self: flex-end;
+}
+@media (max-width: 480px) {
+  div.cta {
+    display: none;
+  }
+  header,
+  section.questions {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 0px 40px 0px;
+    align-items: center;
+  }
+  header section.heroText,
+  article.heroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  section.logos img.logoB {
+    display: none;
+  }
+  section.logos img.logoS {
+    display: flex;
+    padding: 5%;
+    width: 60%;
+  }
+
+  section.features ul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+    /* border: 2px solid coral; */
+  }
+  section.features ul li {
+    width: 80%;
+    gap: 10px;
+  }
+
+  article.testimony p.feedback {
+    padding: auto;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: start;
+    padding-bottom: 20px;
+  }
+  footer h4.wallet {
+    display: flex;
+    font-size: large;
+    bottom: auto;
+    padding-bottom: 20px;
+    order: 1;
+  }
+  footer ul.list {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    order: 4;
+    right: auto;
+  }
+  footer form.email {
+    gap: 20px;
+    order: 2;
+    padding-bottom: 10%;
+    width: 140%;
+    align-items: stretch;
+  }
+  footer form.email input {
+    width: 70%;
+  }
+
+  footer div.ctaEnd {
+    order: 3;
+    padding-bottom: 10%;
+    width: 150%;
+  }
+  footer div.ctaEnd button {
+    width: 70%;
+  }
+}
